@@ -5,6 +5,9 @@ const envVars = z
   .object({
     PORT: z.string().transform(Number).default('3000'), // Default port for the server
     API_PREFIX: z.string().default('api'), // Default prefix for the API
+    REDIS_HOST: z.string().default('localhost'), // Default Redis host
+    REDIS_PORT: z.string().transform(Number).default('6379'), // Default Redis port
+    REDIS_PASSWORD: z.string().optional(), // Optional Redis password
   })
   .passthrough();
 
@@ -21,6 +24,10 @@ if (!parseEnv.success) {
 export const env = {
   port: parseEnv.data.PORT,
   apiPrefix: parseEnv.data.API_PREFIX,
+  redisHost: parseEnv.data.REDIS_HOST,
+  redisPort: parseEnv.data.REDIS_PORT,
+  redisPassword: parseEnv.data.REDIS_PASSWORD ?? undefined,
+
   // Add more environment variables as needed
 };
 
