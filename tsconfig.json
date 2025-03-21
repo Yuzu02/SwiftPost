@@ -21,7 +21,8 @@
       "@/*": ["./src/*"],
       "@/test/*": ["./test/*"],
       "@/common/*": ["./src/common/*"],
-      "@/config/*": ["./src/config/*"],
+      "@/dto/*": ["./src/common/dto/*"],
+      "@/config/*": ["src/config/*"],
       "@/modules/*": ["./src/modules/*"],
       "@/utils/*": ["./src/utils/*"]
     }
