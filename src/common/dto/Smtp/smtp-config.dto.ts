@@ -1,4 +1,4 @@
-import { SmtpAuth } from '@/dto/Smtp/smtp-auth.dto';
+import { SmtpAuth } from './smtp-auth.dto';
 import {
   IsBoolean,
   IsNotEmpty,

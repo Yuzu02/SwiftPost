@@ -1,4 +1,5 @@
 {
   "material-icon-theme.activeIconPack": "nest",
-  "cSpell.words": ["nestjs", "redis", "sanitizar", "swiftpost"]
+  "cSpell.words": ["nestjs", "redis", "sanitizar", "swiftpost"],
+  "conventionalCommits.scopes": ["Tests"]
 }

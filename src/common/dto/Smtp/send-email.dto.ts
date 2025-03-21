@@ -1,5 +1,5 @@
-import { MailOptions } from '@/dto/Smtp/mail-options.dto';
-import { SmtpConfig } from '@/dto/Smtp/smtp-config.dto';
+import { MailOptions } from './mail-options.dto';
+import { SmtpConfig } from './smtp-config.dto';
 import { Type } from 'class-transformer';
 import { IsNotEmpty, IsObject, ValidateNested } from 'class-validator';
 

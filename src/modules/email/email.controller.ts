@@ -1,5 +1,5 @@
 import { Body, Controller, Post, HttpCode, HttpStatus } from '@nestjs/common';
-import { EmailService } from '@/modules/email/email.service';
+import { EmailService } from './email.service';
 import { SendEmail } from '@/common/dto/Smtp/send-email.dto';
 
 @Controller('email')
